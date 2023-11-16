@@ -3,7 +3,7 @@ services:
     container_name: postgres-authenticator
     image: postgres
     environment:
-      POSTGRES_DB: "NewDb"
+      POSTGRES_DB: "DBProduct"
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: " "
     ports:

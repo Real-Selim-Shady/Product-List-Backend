@@ -30,7 +30,7 @@ It is based on Express, NodeJs, Typescript and PostgresSQL.
 - *2nd possibility*
     - Use command docker compose up -d, or docker-compose up -d
     - Use command docker ps (you will be able to close the docker image by using docker compose stop, then, docker compose rm)
-    - Take the port of pgadmin (if it's 5050:80, then you open pgadmin on localhost/5050)
+    - Take the port of pgadmin (if it's 5050:80, then you open pgadmin on localhost:5050)
     - Connect to the docker image using the PGADMIN_DEFAULT_EMAIL and PGADMIN_DEFAULT_PASSWORD (here, it's any@mail.com and admin)
     - Then you have access to a pgadmin platform
     - Click right on Servers, create a new server named: Authenticator

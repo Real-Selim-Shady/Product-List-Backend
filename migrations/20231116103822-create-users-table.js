@@ -14,6 +14,7 @@ module.exports = {
 			id: {
 				type: Sequelize.INTEGER,
 				primaryKey: true,
+				unique: true,
 				autoIncrement: true,
 			},
 			title: {
@@ -26,7 +27,6 @@ module.exports = {
 			},
 			description: {
 				type: Sequelize.STRING,
-				unique: true,
 				allowNull: false,
 			},
 			seller: {
@@ -38,6 +38,14 @@ module.exports = {
 				allowNull: false,
 			},
 			alt: {
+				type: Sequelize.DATE,
+				allowNull: false,
+			},
+			createdAt: {
+				type: Sequelize.DATE,
+				allowNull: false,
+			},
+			updatedAt: {
 				type: Sequelize.DATE,
 				allowNull: false,
 			},

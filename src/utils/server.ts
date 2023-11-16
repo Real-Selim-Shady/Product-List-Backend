@@ -1,6 +1,8 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
+import getProductsRoute from "../routes/getProducts";
+import registerProductRoute from "../routes/registerProduct";
 /*
 import registerUserRoute from "../routes/registerUser";
 import editUserRoute from "../routes/editUser";
@@ -25,6 +27,8 @@ const createServer = () => {
 	/**
      * Attach routes to the Express app.
      */
+	getProductsRoute(app);
+	registerProductRoute(app);
 	/*registerUserRoute(app);
 	editUserRoute(app);
 	deleteUserRoute(app);

@@ -6,6 +6,7 @@ import Product from "../models/Product";
  * Sequelize instance used to connect to the database.
  */
 const sequelize = new Sequelize({
+	logging: console.log,
 	dialect: "postgres",
 	host: "localhost",
 	username: "postgres",
